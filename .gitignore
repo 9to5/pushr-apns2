@@ -1,0 +1,7 @@
+.bundle/
+log/*.log
+pkg/
+Gemfile.lock
+/coverage/
+
+.DS_Store
