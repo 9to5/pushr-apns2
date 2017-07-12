@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = 'pushr-apns2'
   s.version     = PushrApns2::VERSION
   s.authors     = ['Tom Pesman']
-  s.email       = ['tom@9to5.software']
+  s.email       = ['tom@tnux.net']
   s.homepage    = 'https://github.com/9to5/pushr-apns2'
   s.summary     = 'APNS (iOS/Apple) part of the modular push daemon.'
   s.description = 'APNS support for the modular push daemon.'
@@ -19,10 +19,10 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.required_ruby_version = '>= 2.0.0'
+  s.required_ruby_version = '>= 2.2.0'
 
   s.add_runtime_dependency 'multi_json'
-  s.add_runtime_dependency 'pushr-core'
+  s.add_runtime_dependency 'pushr-core', '~> 1.0.3'
   s.add_runtime_dependency 'activemodel'
   s.add_runtime_dependency 'jwt'
   s.add_runtime_dependency 'net-http2'
