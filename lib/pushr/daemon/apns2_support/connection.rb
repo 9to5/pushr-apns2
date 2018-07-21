@@ -15,6 +15,7 @@ module Pushr
 
         def connect
           @client = NetHttp2::Client.new(url, connect_timeout: TIMEOUT)
+          @client.on(:error) { |exception| puts Pushr::Daemon.logger.error(exception) }
         end
 
         def url
